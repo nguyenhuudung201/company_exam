@@ -1,10 +1,7 @@
 package com.class2;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
-import java.util.concurrent.RecursiveAction;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -16,8 +13,8 @@ public class Main {
             System.out.println("3. Find person by id");
             System.out.println("4. Update person");
             System.out.println("5. Display total bonus");
-            System.out.println("6. UpdateSalary");
-            System.out.println("7.Exit");
+            System.out.println("6. Update Salary");
+            System.out.println("7. Exit");
 
             System.out.println("Choose menu: ");
             Scanner input = new Scanner(System.in);
