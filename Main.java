@@ -1,29 +1,23 @@
 package com.class1;
-import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Person person = new Person();
-        person.inputData();
+        ShapeManagement shapeManagement = new ShapeManagement();
+        shapeManagement.addNewShape();
+        shapeManagement.displayAll();
+       /* Shape shape[]= new Shape[3];
+        shape[0] = new Circle();
+        shape[1] = new Rectangle();
+        shape[2] = new Triangle();
 
-        int n;
-        int sum=0;
-        Scanner s = new Scanner(System.in);
-        System.out.print("input number of bill: ");
-        n = s.nextInt();
-        int[] bills = new int[n];
-        for(int i = 0 ;i < n; i++)
-        {
-            System.out.print("input value of bill  " + (i+1) + " ");
-            bills[i] = s.nextInt();
+        double total = 0;
+        for (Shape item : shape) {
+            item.inputData();
+            item.getArea();
+            item.display();
+            total += item.getArea();
         }
 
-        sum = person.calcTotal(bills);
-        System.out.println("Sum = " + sum); //600
-
-        if(person.payMoney(sum)) {
-            System.out.println("You can buy it");
-        } else {
-            System.out.println("You can not buy it ");
-        }
+        System.out.println("Total Area: " + total);*/
     }
 }
